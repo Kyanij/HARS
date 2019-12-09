@@ -1,4 +1,3 @@
-import { HeaderModule } from './header/header.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -25,7 +24,6 @@ import {
     MatListModule,
     HotelModule,
     CustomerModule,
-    HeaderModule,
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
