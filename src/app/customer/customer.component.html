@@ -1,0 +1,47 @@
+<div class="example-container">
+  <mat-card>
+    <mat-form-field>
+      <input matInput placeholder="FirstName" [(ngModel)]="firstName" />
+    </mat-form-field>
+    <br />
+    <mat-form-field> <input matInput placeholder="LastName" /> </mat-form-field
+    ><br />
+    <mat-form-field>
+      <mat-select
+        placeholder="Select"
+        (selectionChange)="onChange($event)"
+        [(ngModel)]="selected"
+      >
+        <mat-option value="Angular">Angular</mat-option>
+        <mat-option value="SQL">SQL</mat-option>
+        <mat-option value="ASP.NET">ASP.NET</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="primary" (click)="openDialog()">
+      Add Customer
+    </button>
+    <br />
+    {{ selected }}
+  </mat-card>
+</div>
+<br /><br />
+<br />
+
+<br />
+<br />
+<hr />
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+  </tr>
+  <tr *ngFor="let data of personData" (click)="onRowClick(data)">
+    <td>{{ data.name }}</td>
+    <td>{{ data.age }}</td>
+    <td>{{ data.address }}</td>
+  </tr>
+</table>
+
+<br />

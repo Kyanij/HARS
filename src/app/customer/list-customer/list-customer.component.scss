@@ -1,0 +1,29 @@
+table {
+  width: 80%;
+}
+
+$primary: red;
+.mat-raised-button {
+  margin-top: 10px;
+  margin-left: 10px;
+  min-width: 82px;
+
+  .mat-primary {
+    background-color: primary;
+  }
+}
+
+.highlightColor {
+  background-color: #aaccdd;
+  cursor: pointer;
+}
+
+.mat-cell:hover {
+  cursor: pointer;
+}
+
+.list-customer {
+  margin: 80px;
+}
+
+
