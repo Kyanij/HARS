@@ -1,3 +1,4 @@
+import { CustomerService } from './../customer.service';
 import { DeleteCustomerComponent } from './delete-customer/delete-customer.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component';
 import { MatDialog, MatSnackBar } from '@angular/material';
@@ -24,9 +25,16 @@ export class ListCustomerComponent implements OnInit {
   selectedIndex: number;
   selectedRow;
 
-  constructor(private dialog: MatDialog, private snackBar: MatSnackBar) {}
+  constructor(
+    private dialog: MatDialog,
+    private snackBar: MatSnackBar,
+    private customerService: CustomerService
+  ) {}
 
   ngOnInit() {
+    // this.customerService.getCustomers().subscribe(response => {
+    //   console.log('data', response);
+    // });
     this.setData();
   }
 

@@ -1,3 +1,4 @@
+import { ListHotelModule } from './list-hotel/list-hotel.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HotelComponent } from './hotel.component';
@@ -19,7 +20,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatButtonModule,
     MatSnackBarModule,
-    MatTabsModule
+    MatTabsModule,
+    ListHotelModule
   ]
 })
 export class HotelModule {}

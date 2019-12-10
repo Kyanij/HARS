@@ -13,7 +13,8 @@ import {
   MatIconModule,
   MatListModule,
   MatToolbarModule,
-  MatMenuModule
+  MatMenuModule,
+  MatSlideToggleModule
 } from '@angular/material';
 
 @NgModule({
@@ -29,6 +30,7 @@ import {
     MatIconModule,
     MatToolbarModule,
     MatMenuModule,
+    MatSlideToggleModule,
     BrowserAnimationsModule
   ],
   providers: [],

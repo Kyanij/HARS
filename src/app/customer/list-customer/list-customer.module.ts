@@ -1,3 +1,4 @@
+import { CustomerService } from './../../service/customer/customer.service';
 import { DeleteCustomerModule } from './delete-customer/delete-customer.module';
 import { ListCustomerComponent } from './list-customer.component';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import {
     DeleteCustomerModule,
     MatSnackBarModule
   ],
-  exports: [ListCustomerComponent]
+  exports: [ListCustomerComponent],
+  providers: [CustomerService]
 })
 export class ListCustomerModule {}
