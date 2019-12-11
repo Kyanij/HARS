@@ -1,4 +1,3 @@
-import { CustomerService } from './../../service/customer/customer.service';
 import { DeleteCustomerModule } from './delete-customer/delete-customer.module';
 import { ListCustomerComponent } from './list-customer.component';
 import { NgModule } from '@angular/core';
@@ -8,6 +7,7 @@ import {
   MatSnackBarModule,
   MatFormFieldModule
 } from '@angular/material';
+import { CustomerService } from '../customer.service';
 
 @NgModule({
   declarations: [ListCustomerComponent],

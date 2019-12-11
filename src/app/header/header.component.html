@@ -1,0 +1,16 @@
+<mat-drawer-container class="container">
+  <mat-drawer #drawer>
+    <mat-list>
+      <mat-list-item *ngFor="let m of listMenu"
+        ><a routerLink="m.path">{{ m.name }}</a></mat-list-item
+      >
+    </mat-list>
+  </mat-drawer>
+  <div class="sidenav-content">
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <!-- <mat-drawer-content>Main content</mat-drawer-content> -->
+</mat-drawer-container>

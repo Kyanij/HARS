@@ -25,25 +25,25 @@ export class AppComponent {
     } else return 'white';
   }
 
-  toggleFullScreen() {
-    if(document.webkitIsFullScreen) {
-      this._exitFullscreen();}
-      else {
-        this._activateFullscreen();
-      }
-    }
+  // toggleFullScreen() {
+  //   if(document.webkitIsFullScreen) {
+  //     this._exitFullscreen();}
+  //     else {
+  //       this._activateFullscreen();
+  //     }
+  //   }
   
 
-    // Activate Full Screen
+  //   // Activate Full Screen
 
-    private _activateFullscreen() {
-      let fullscreenElement = document.documentElement;
-      if(fullscreenElement.requestFullscreen) {
-        fullscreenElement.requestFullscreen();
-      }else if (fullscreenElement.webkitRequestFullScreen) {
-        fullscreenElement.webkitRequestFullscreen();
-      }
-    }
+  //   private _activateFullscreen() {
+  //     let fullscreenElement = document.documentElement;
+  //     if(fullscreenElement.requestFullscreen) {
+  //       fullscreenElement.requestFullscreen();
+  //     }else if (fullscreenElement.webkitRequestFullScreen) {
+  //       fullscreenElement.webkitRequestFullscreen();
+  //     }
+  //   }
 
     // private _exitFullScreen() {
     //   if(document.exitFullscreen) {

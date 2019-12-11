@@ -7,6 +7,7 @@ import { Error404Component } from './error404/error404.component';
 import { CustomerModule } from './customer/customer.module';
 import { HotelModule } from './hotel/hotel.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {
   MatSidenavModule,
   MatButtonModule,
@@ -16,6 +17,7 @@ import {
   MatMenuModule,
   MatSlideToggleModule
 } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent, Error404Component],
@@ -31,6 +33,7 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatSlideToggleModule,
+    HttpClientModule,
     BrowserAnimationsModule
   ],
   providers: [],

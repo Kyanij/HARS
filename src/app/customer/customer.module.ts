@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomerComponent } from './customer.component';
 
-import { CustomerService } from '../service/customer/customer.service';
 
 import {
   MatInputModule,
@@ -23,6 +22,7 @@ import { ListCustomerComponent } from './list-customer/list-customer.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
 import { AddCustomerComponent } from './list-customer/add-customer/add-customer.component';
 import { DeleteCustomerComponent } from './list-customer/delete-customer/delete-customer.component';
+import { CustomerService } from './customer.service';
 
 @NgModule({
   declarations: [

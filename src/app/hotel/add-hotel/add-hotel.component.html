@@ -1,0 +1,19 @@
+<form #userForm="ngForm">
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Hotel Name"
+      name="hotelName"
+      [(ngModel)]="formObject.hotelName"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <input
+      matInput
+      placeholder="Vat Number"
+      name="vatNumber"
+      [(ngModel)]="formObject.vatNumber"
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="onSave()">Save</button>
+</form>

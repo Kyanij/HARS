@@ -10,9 +10,11 @@ import {
   MatTabsModule
 } from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { AddHotelComponent } from './add-hotel/add-hotel.component';
+import { DeleteHotelComponent } from './delete-hotel/delete-hotel.component';
 
 @NgModule({
-  declarations: [HotelComponent],
+  declarations: [HotelComponent, DeleteHotelComponent],
   imports: [
     CommonModule,
     MatInputModule,
@@ -22,6 +24,7 @@ import { FormsModule } from '@angular/forms';
     MatSnackBarModule,
     MatTabsModule,
     ListHotelModule
-  ]
+  ],
+  entryComponents:[AddHotelComponent]
 })
 export class HotelModule {}
